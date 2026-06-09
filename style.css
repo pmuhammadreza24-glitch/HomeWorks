@@ -1,0 +1,334 @@
+/* hero css */
+/* سکشن اول */
+
+.container {
+    /* تا جایی که می‌توانی عرض را بگیر،
+ولی هیچ‌وقت از 1400پی ایکس بزرگ‌تر نشو.
+اندازه صفحه هر چی باشه منهای 80 نشان بده از راست و چپ کم می کنه */
+
+    width: calc(100% - 80px);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: abcdisplay;
+    color: rgb(220, 98, 5);
+    font-size: 55px;
+    font-weight: 400;
+
+    /* font-weight: bold; */
+
+}
+
+.hero {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.hero-categories {
+    font-size: 18px;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.hero-categories:hover {
+    background-color: rgb(217, 215, 213);
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.hero-search {
+    padding: 14px 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(9, 9, 9);
+    font-size: 16px;
+    width: 100%;
+
+
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+}
+
+.search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    /* این یعنی برو وسط والد */
+    transform: translateY(-50%);
+    /* این یعنی نصف قد خودت برگرد بالا تا با لبه بالایی ایکن والد یکی بشه */
+    background-color: #f1641e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+
+
+}
+
+.search-icon:hover {
+    background-color: #f1641e;
+    border-radius: 0 50% 50% 0;
+}
+
+
+.hero-sign-in {
+    font-size: 16px;
+    font-weight: 550;
+    font-family: arial;
+    cursor: pointer;
+    /* padding: 10px; */
+    /* line-height: 40px; */
+
+
+}
+
+
+.fa-heart,
+.fa-bag-shopping {
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+
+
+/* سکشن دوم */
+
+.hero-menu {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(213, 210, 210);
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: arial;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.hero-menu a {
+
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero-menu a:hover {
+
+    background-color: rgb(234, 233, 232);
+
+
+}
+
+/* سکشن سوم */
+
+
+.hero-banner {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background-color: rgb(4, 98, 98);
+    border-radius: 20px;
+    height: 400px;
+    cursor: pointer;
+
+}
+
+.hero-img {
+    width: 500px;
+    height: 400px;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.title1,
+.title2 {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+
+
+}
+
+.title1 {
+    font-size: 60px;
+    width: 800px;
+
+
+}
+
+.title2 {
+
+    font-size: 25px;
+    margin-top: 15px;
+
+
+}
+
+/* سکشن چهارم */
+
+.img-4-container {
+    display: flex;
+    gap: 5px;
+
+
+}
+
+.sention-4 {
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+
+.card-4 {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.img-4 {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.sention-4>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.card-4>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+/* سکشن اخر */
+
+.end-row {
+    background-color: rgb(210, 210, 233);
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+
+}
+
+.end-search {
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    /* مهم پدینگ و بورد داخل ویت حساب بشوندو از ان بیشتر نشه.این را اول فایل با ستاره بنویس */
+}
+
+.email {
+    position: relative;
+    width: 500px;
+    /* سابسکرابت امد داخل اینپوت */
+    margin: 0 auto;
+    /* وسط چین کرد */
+
+}
+
+.email-sub {
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 10px;
+
+}
+
+.email-sub:hover {
+    background-color: rgb(174, 166, 158);
+    border-radius: 0 20px 20px 0;
+}
+
+
+/* کدهای index.html */
+
+.html-hero {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    padding-top: 10px;
+
+}
+
+.html-hero:hover {
+    background-color: rgb(192, 192, 236);
+    border-radius: 40px;
+   
+}
+
+.index-ul{
+list-style: none;
+}
+
+
+
+
+
+
+
+
+/* 
+/* لپ تاپ */
+@media (max-width:1024px){
+    .hero{
+        flex-direction: column;
+
+    }
+
+    .hero-search{
+        width: 100%;
+    }
+    
+}
+
+/* تبلت */
+@media (max-width:768px){}
+
+/* موبایل */
+@media (max-width:480px){} */
+
